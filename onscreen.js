@@ -54,7 +54,7 @@ var OnScreen = (function() {
       if (!hasFocus || document[hidden]) {
         elementVisible = false;
       }
-      console.log("Visible: " + elementVisible);
+      return elementVisible;
     }
     document.addEventListener(visibilityChange, handleVisibilityChange, false);
     document.addEventListener("scroll", handleScrollChange, false);
